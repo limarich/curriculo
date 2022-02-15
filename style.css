@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+
+@page {
+  size: 21cm 29.7cm;
+  margin: 30mm 45mm 30mm 45mm;
+}
+* {
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  color: #555;
+  text-transform: uppercase;
+}
+body {
+  background-color: #172129;
+}
+body .elements {
+  background-color: #f2f2f2;
+}
+ul h3,
+article h3 {
+  font-size: 2em;
+  color: #2924a6;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+ul li {
+  list-style: none;
+  margin: 5px auto;
+  font-size: 1.1em;
+  padding: 5px;
+}
+header {
+  position: relative;
+}
+header figure {
+  display: flex;
+}
+header figure img {
+  position: absolute;
+  top: -5px;
+  left: 18vw;
+  width: 20%;
+  border: 10px solid #2924a6;
+  border-radius: 50%;
+}
+header figure .retangule {
+  background-color: #2924a6;
+  width: 25vw;
+}
+header figure figcaption {
+  font-size: 1.8em;
+  color: #2c2c2c;
+  margin: 0 auto;
+}
+/* INFORMATION SECTION */
+.info {
+  display: flex;
+}
+.info article {
+  width: 100%;
+}
+.info article .abstract,
+.info article ul {
+  max-width: 50vw;
+  margin: 10px auto;
+  text-align: justify;
+}
+/* LATERAL INFO*/
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10vw;
+}
+/* ACADEMIC RECORDS */
+article ul h3 {
+  text-align: left;
+  width: 100%;
+}
+article ul li .title {
+  display: flex;
+  flex-direction: column;
+}
+article ul li .title h4 {
+  color: #2924a6;
+  margin: 0;
+}
+article ul li .title h5 {
+  margin-top: 15px;
+}
+article ul li .description {
+  display: flex;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+article ul li ul {
+  text-align: left !important;
+  font-size: 0.8em;
+  margin: 0 !important;
+}
+/* FOOTER */
+
+footer {
+  padding: 20px;
+  background: #2924a6;
+}
+footer .contacts {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+footer .contacts a {
+  color: #fff;
+  text-decoration: none;
+}
