@@ -106,6 +106,10 @@ ul.academic-record li,
 ul.works .role {
   border-left: 2px solid #2924a6;
 }
+ul.works .role,
+.academic-record li {
+  margin: 15px 0 5px 20px;
+}
 /* FOOTER */
 
 footer {
