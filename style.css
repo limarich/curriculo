@@ -18,7 +18,8 @@ body .elements {
   background-color: #f2f2f2;
 }
 ul h3,
-article h3 {
+article h3,
+div h3 {
   font-size: 2em;
   color: #2924a6;
   letter-spacing: 5px;
@@ -34,7 +35,8 @@ header {
   position: relative;
 }
 header figure {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.5fr 200px;
 }
 header figure img {
   position: absolute;
@@ -74,6 +76,7 @@ aside {
   margin-left: 10vw;
 }
 /* ACADEMIC RECORDS */
+
 article ul h3 {
   text-align: left;
   width: 100%;
@@ -94,11 +97,14 @@ article ul li .description {
   text-align: left;
   font-size: 0.9em;
 }
-
 article ul li ul {
   text-align: left !important;
   font-size: 0.8em;
   margin: 0 !important;
+}
+ul.academic-record li,
+ul.works .role {
+  border-left: 2px solid #2924a6;
 }
 /* FOOTER */
 
@@ -116,4 +122,83 @@ footer .contacts {
 footer .contacts a {
   color: #fff;
   text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  body .elements {
+    width: 100vw;
+  }
+  aside {
+    margin: 0;
+  }
+  p {
+    margin: 0 1.2em;
+  }
+  /*  */
+  header figure {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  header figure img {
+    position: static;
+    min-width: 40%;
+    margin: 10px auto 5px;
+  }
+  header figure .retangule {
+    display: none;
+  }
+  header figure figcaption {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* SECTIONS ALIGNMENT */
+  section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    font-size: 1em;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul h3,
+  div h3,
+  article ul h3 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  ul li {
+    font-size: 0.9em;
+    margin: 5px auto;
+    text-align: center;
+  }
+  .info article .abstract,
+  .info article ul {
+    max-width: 80vw;
+  }
+  /*  */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .projects li {
+    text-align: center;
+  }
+  /*  */
+  article ul li .description {
+    font-size: 0.8em;
+    width: 80vw;
+  }
+  article ul li .description span {
+    text-align: center;
+    margin: 0 10px;
+  }
+  ul.academic-record li,
+  ul.works .role {
+    border-left: 2px solid #2924a6;
+    min-width: 80vw;
+  }
 }
